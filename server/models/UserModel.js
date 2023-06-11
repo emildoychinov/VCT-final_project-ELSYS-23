@@ -4,5 +4,6 @@ module.exports = {
         user_id : "uuid",
         password : "text"
     },
-    key:["user_id"]
+    key:["user_id"],
+    indexes:["username"]
 }

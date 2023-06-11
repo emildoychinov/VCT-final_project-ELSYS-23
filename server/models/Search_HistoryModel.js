@@ -1,8 +1,9 @@
 module.exports = {
     fields:{
-        user_id : "uuid",
         query : "text",
-        date : "timestamp"
+        index : "text",
+        url : "text",
+        safe : "text"
     },
-    key:["user_id"]
+    key:["query", "index", "safe"]
 }
