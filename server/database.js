@@ -1,4 +1,5 @@
 var models = require('express-cassandra');
+const { v4: uuidv4 } = require('uuid');
 
 //Tell express-cassandra to use the models-directory, and
 //use bind() to load the models using cassandra configurations.
@@ -25,5 +26,10 @@ models.setDirectory( __dirname + '/models').bind(
             console.log("err");
             throw err;
         }
+        console.log('Cassandra database is up!')
     }
 );
+
+  
+
+module.exports = {models};
