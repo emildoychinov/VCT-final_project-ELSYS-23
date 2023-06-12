@@ -6,15 +6,15 @@ const bodyParser = require('body-parser')
 const google = require('googlethis');
  
 
-app.use(express.static('../client/static'));
+app.use(express.static('./client/static'));
 app.get('/', (req, res) => {
-  res.sendFile('client/html/index.html', { root: '../' });
+  res.sendFile('/client/html/index.html', { root: './' });
 })
 app.get('/sign_in', (req, res) => {
-  res.sendFile('client/html/login.html', { root: '../' });
+  res.sendFile('/client/html/login.html', { root: './' });
 })
 app.get('/sign_up', (req, res) => {
-  res.sendFile('client/html/register.html', { root: '../' });
+  res.sendFile('/client/html/register.html', { root: './' });
 })
 
 app.post('/fetch_image',bodyParser.json(), async (req, res) => {

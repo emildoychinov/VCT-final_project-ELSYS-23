@@ -3,9 +3,8 @@ var models = require('express-cassandra');
 models.setDirectory( __dirname + '/models').bind(
     {
         clientOptions: {
-            contactPoints: ['localhost'],
+            contactPoints: ['cassandra-service'],
             localDataCenter: 'datacenter1',
-            protocolOptions: { port: 9042 },
             keyspace: 'image_fetcher',
             queryOptions: {consistency: models.consistencies.one},
             socketOptions: { readTimeout: 60000 },
