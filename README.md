@@ -14,11 +14,10 @@ This is a final project for the VCT class @ELSYS7
 
 Enter a keyword and depth of choice and wait for the image to load
 
-#Image load speed
+## Image load speed
 Image loading is not instant as it is done via requests to an API. In order to make it partially faster, a log of every search made is kept in the database. 
 Every single time a keyword and depth that have already been searched are entered, a load of a couple milliseconds is expected.
 
-## Application configuration
+## Application configuration for high availability, scalability and elasticity
 
-In order to ensure high availability and elasticity, this is the following structure of the application :
 ![project-diagram](https://github.com/emildoychinov/VCT-final_project-ELSYS-23/assets/65024936/bcf4c854-0cbd-4b2f-b203-4c88d0d9cb4f)
