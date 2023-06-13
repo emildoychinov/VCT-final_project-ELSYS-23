@@ -11,6 +11,7 @@ This is a final project for the VCT class @ELSYS7
 ## Usage 
  
 ![image](https://github.com/emildoychinov/VCT-final_project-ELSYS-23/assets/65024936/ab01609f-99cb-476c-a54b-685aabcab81b)
+
 Enter a keyword and depth of choice and wait for the image to load
 
 #Image load speed
